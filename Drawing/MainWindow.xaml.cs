@@ -43,20 +43,12 @@ namespace Drawing
 
         public MainWindow()
         {
-            
-
             InitializeComponent();
 
             timer.Interval = TimeSpan.FromMilliseconds(speed);
 
             timer.Tick += Start;
-            
-
-            
-
-            
-
-         
+           
         }
 
         private void Start(object sender, EventArgs e)
@@ -84,10 +76,7 @@ namespace Drawing
             if (G == 100 && R == 255 && B != 100)
             {
                 B = (byte)(B - rgb);
-            }
-
-            
-
+            }            
 
             if(counter == 1)
             {
@@ -124,9 +113,7 @@ namespace Drawing
                 Height = raduis,
                 Width = raduis
             };
-
-            
-
+          
             Point position = new Point(X, Y);
             SetPosition(ellipse, position);
             myCanvas.Children.Add(ellipse);             
